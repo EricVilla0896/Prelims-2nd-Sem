@@ -27,30 +27,30 @@ $result = mysqli_query($conn, $sql);
 <head>
 	<title>Join 3 Table Level 1</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dataTables.dataTables.min.css"/>
 </head>
 <body>
 
 <div class="container">
     <h3 align="center">1st Level Join Tables</h3>
-    <div class="horizontal">
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-    </div>
+    <div class="position-relative">
     <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-        <form class="d-flex" role="search" align="right">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">8</a></li>
+                    <li><a class="dropdown-item" href="#">12</a></li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </div>
+            </form>
+        </div>
     </nav>
     </div>
         <div class="table-responsive">
@@ -89,9 +89,6 @@ $result = mysqli_query($conn, $sql);
 
 		        ?>
        </table>
-       <div>
-        <button type="button" class="btn btn-primary">asdasd</button>
-       </div>
         
     </div>
     <nav aria-label="Page navigation example">
@@ -117,17 +114,17 @@ $result = mysqli_query($conn, $sql);
 
 	
 
-<!--
-		<a href="index2.php">Insert Data Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<!-- <a href="index2.php">Insert Data Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="search_filter_print.php">Search Data Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="update.php">Update Data Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
-		<a href="index.php">Go to Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
--->
+		<a href="index.php">Go to Home</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+
 
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js/dataTables.min.js"></script>
+let table = new DataTable('#myTable');
 </html>
 
 
